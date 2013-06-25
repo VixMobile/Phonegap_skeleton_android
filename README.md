@@ -38,3 +38,4 @@ When making an app with Phonegap, there are a few things to remember:
  * Stay away from images. The more images, the slower the app.
  * Use CSS3 Animations instead of Jquery. Jquery slows it down. That's why I'm using Transit. Css is hardware accelerated, jquery is not.
  * Do not use links, and do not use onclick. Use the tap detection from Jquery Mobile that you can see in use in the index file.
+ * Do not use Alerts or Prompts or any Javascript crap like that. Since Phonegap builds it as a gingerbread style app, the prompts will look gingerbread styled, and will look like crap. Make your own alert boxes, even though its more work.
