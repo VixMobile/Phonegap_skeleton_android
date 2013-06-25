@@ -31,3 +31,10 @@ You should be able to figure out the code by looking at it; I commented the enti
 If you have any problem figuring something out, shoot me an email at mitch@mitchs.co.
 
 If you end up publishing an app from my source, let me know!
+
+.
+
+When making an app with Phonegap, there are a few things to remember:
+ * Stay away from images. The more images, the slower the app.
+ * Use CSS3 Animations instead of Jquery. Jquery slows it down. That's why I'm using Transit. Css is hardware accelerated, jquery is not.
+ * Do not use links, and do not use onclick. Use the tap detection from Jquery Mobile that you can see in use in the index file.
